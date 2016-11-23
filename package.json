@@ -1,0 +1,11 @@
+{
+  "name": "sentiment-analysis-problems",
+  "version": "1.0.0",
+  "description": "Read paragraphs and determine their sentiment analysis and other data points",
+  "main": "sentimentAnalysis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Oviedo",
+  "license": "ISC"
+}
