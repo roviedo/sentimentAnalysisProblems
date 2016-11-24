@@ -1,11 +1,11 @@
-// Items searching for
+// Data points to be searching for in English paragraphs
 var datePattern = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
 var femaleGender = ['her', 'she'];
 var maleGender = ['him', 'he'];
 var negativeSentiment = ["disappointed", "sad", "mad", "frustrated"];
 var positiveSentiment = ["happy", "excited", "glad"];
 
-export function parseString(paragraph) {
+export function sentimentAnalysisAndMore(paragraph) {
     /**
     * Loops through paragraph String and returns the sentiment analysis object
     * @param {String} paragraph
@@ -86,10 +86,10 @@ export function getGender(genderObj) {
     }
 }
 
-// Paragraphs to be parsed
+// Paragraphs to be searched
 var paragraph = "John downloaded the Pokemon Go app on 07/15/2016. By 07/22/2016, he was on level 24. Initially, he was very happy with the app. However, he soon became very disappointed with the app because it was crashing very often. As soon as he reached level 24, he uninstalled the app."
 var paragraph2 = "Hua Min liked playing tennis. She first started playing on her 8th birthday - 07/07/1996. Playing tennis always made her happy. She won her first tournament on 08/12/2010. However, on 04/15/2015 when she was playing at the Flushing Meadows, she had a serious injury and had to retire from her tennis career."
 
-// Main Function
-console.log(parseString(paragraph));
-console.log(parseString(paragraph2));
+// console logs of Main Function
+console.log(sentimentAnalysisAndMore(paragraph));
+console.log(sentimentAnalysisAndMore(paragraph2));
