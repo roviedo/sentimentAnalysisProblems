@@ -63,7 +63,7 @@ export function getSentiment(sentimentObj) {
 
 export function getTimeDuration(datesArr) {
     /**
-    * Takes array of dates and returns time duration
+    * Takes array of dates and returns time duration in days
     * @param {array} datesArr
     * @return {Number} timeDuration
     */
