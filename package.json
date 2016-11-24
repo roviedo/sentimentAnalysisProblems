@@ -4,14 +4,21 @@
   "description": "Read paragraphs and determine their sentiment analysis and other data points",
   "main": "sentimentAnalysis.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register test/sentimentAnalysis-test.js"
   },
   "author": "Raul Oviedo",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
     "mocha": "^3.1.2"
   },
   "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "mocha": "^3.1.2"
+  },
+  "babel": {
+    "presets": [ "es2015", "react" ]
   }
 }

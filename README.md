@@ -1,5 +1,5 @@
 ### System Requirements
-MacOSX or Linux
+Mac OSX or Linux
 
 ### Installation
 - Get node + npm from https://nodejs.org/en/download/
@@ -8,7 +8,8 @@ MacOSX or Linux
 
 ### Run Program
 - cd into sentimentAnalysisProblems directory if not already in it
-- node sentimentAnalysis.js
+- node sentimentAnalysis.js (currently this will not work unless export is removed from functions)
 
 ## Running Tests
 - cd into sentimentAnalysisProblems directory if not already in it
+- npm test

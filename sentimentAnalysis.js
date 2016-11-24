@@ -5,7 +5,7 @@ var maleGender = ['him', 'he'];
 var negativeSentiment = ["disappointed", "sad", "mad", "frustrated"];
 var positiveSentiment = ["happy", "excited", "glad"];
 
-function parseString(paragraph) {
+export function parseString(paragraph) {
     /**
     * Loops through paragraph String and returns the sentiment analysis object
     * @param {String} paragraph
@@ -23,7 +23,7 @@ function parseString(paragraph) {
         female: 0
     }
 
-    for(i=0; i<=paragraphArray.length; i++) {
+    for(var i=0; i<=paragraphArray.length; i++) {
         if (datePattern.test(paragraphArray[i])) {
             datesArr.push(new Date(paragraphArray[i]));
         } else if (maleGender.indexOf(paragraphArray[i]) > -1) {
@@ -44,7 +44,7 @@ function parseString(paragraph) {
     }
 }
 
-function getSentiment(sentimentObj) {
+export function getSentiment(sentimentObj) {
     /**
     * Takes Object of count by sentiment type and returns sentiment
     * @param {Object} sentimentObj
@@ -59,7 +59,7 @@ function getSentiment(sentimentObj) {
     }
 }
 
-function getTimeDuration(datesArr) {
+export function getTimeDuration(datesArr) {
     /**
     * Takes array of dates and returns time duration
     * @param {array} datesArr
@@ -72,7 +72,7 @@ function getTimeDuration(datesArr) {
     return timeDuration;
 }
 
-function getGender(genderObj) {
+export function getGender(genderObj) {
     /**
     * Takes object with count by and returns gender with max count
     * @param {array} genderObj
