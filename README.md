@@ -1,11 +1,19 @@
+## Sentiment Analysis and more
+
 ### System Requirements
 Mac OSX or Linux
 
 ### Installation
-- Get node + npm from https://nodejs.org/en/download/
-- cd into sentimentAnalysisProblems directory
-- npm install
+- Get node + npm from https://nodejs.org/en/download/ and go through installation process of it.
+- Do the following from your bash shell
+```
+cd into sentimentAnalysisProblems
+npm install
+```
 
 ## Running Program
-- cd into sentimentAnalysisProblems directory if not already in it
-- npm test
+- Do the following from your bash shell
+```
+cd into sentimentAnalysisProblems
+npm test
+```
