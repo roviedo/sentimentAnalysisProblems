@@ -11,7 +11,7 @@ cd into sentimentAnalysisProblems
 npm install
 ```
 
-### Running Program
+### Running The Program
 - Do the following from your bash shell
 ```
 cd into sentimentAnalysisProblems
