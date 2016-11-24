@@ -33,6 +33,16 @@ describe('Sentiment Analysis and more', function() {
       assert.equal(sentiment, "mixed");
     });
 
+    it('should return positive sentiment when positive > 0 and negative = 0', () => {
+      const sentimentObj = {
+          positive: 3,
+          negative: 0
+      }
+
+      let sentiment = getSentiment(sentimentObj);
+      assert.equal(sentiment, "positive");
+    });
+
     it('should equal to sentiment analysis provided for John', () => {
       const paragraph = "John downloaded the Pokemon Go app on 07/15/2016. By 07/22/2016, he was on level 24. Initially, he was very happy with the app. However, he soon became very disappointed with the app because it was crashing very often. As soon as he reached level 24, he uninstalled the app."
 
