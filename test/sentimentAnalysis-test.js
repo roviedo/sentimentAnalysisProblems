@@ -8,7 +8,7 @@ describe('Sentiment Analysis and more', function() {
           male: 2,
           female: 4
       }
-      var gender = getGender(genderObj);
+      let gender = getGender(genderObj);
       assert.equal(gender, "female");
     });
 
@@ -18,8 +18,8 @@ describe('Sentiment Analysis and more', function() {
           new Date("08/12/2010"),
           new Date("04/15/2015")
       ]
-      var timeDuration = getTimeDuration(datesArr);
 
+      let timeDuration = getTimeDuration(datesArr);
       assert.equal(timeDuration, 6856);
     });
 
@@ -28,22 +28,22 @@ describe('Sentiment Analysis and more', function() {
           positive: 3,
           negative: 2
       }
-      var sentiment = getSentiment(sentimentObj);
 
+      let sentiment = getSentiment(sentimentObj);
       assert.equal(sentiment, "mixed");
     });
 
     it('should equal to sentiment analysis provided for John', () => {
       const paragraph = "John downloaded the Pokemon Go app on 07/15/2016. By 07/22/2016, he was on level 24. Initially, he was very happy with the app. However, he soon became very disappointed with the app because it was crashing very often. As soon as he reached level 24, he uninstalled the app."
 
-      var sentimentAnalysis = sentimentAnalysisAndMore(paragraph) ;
+      let sentimentAnalysis = sentimentAnalysisAndMore(paragraph) ;
       assert.deepEqual(sentimentAnalysis, { timeDuration: 7, gender: 'male', sentiment: 'mixed' });
     });
 
     it('should equal to sentiment analysis provided for Hua Min', () => {
       const paragraph = "Hua Min liked playing tennis. She first started playing on her 8th birthday - 07/07/1996. Playing tennis always made her happy. She won her first tournament on 08/12/2010. However, on 04/15/2015 when she was playing at the Flushing Meadows, she had a serious injury and had to retire from her tennis career."
 
-      var sentimentAnalysis = sentimentAnalysisAndMore(paragraph) ;
+      let sentimentAnalysis = sentimentAnalysisAndMore(paragraph) ;
       assert.deepEqual(sentimentAnalysis, { timeDuration: 6856, gender: 'female', sentiment: 'positive' });
     });
   });
