@@ -1,7 +1,7 @@
 import { getSentiment, getTimeDuration, getGender, parseString } from "../sentimentAnalysis";
 var assert = require('assert');
 
-describe('Array', function() {
+describe('Sentiment Analysis and more', function() {
   describe('getGender', () => {
     it('should equal to female since it is greater than male in genderObj', () => {
       const genderObj = {
